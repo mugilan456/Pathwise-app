@@ -15,7 +15,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final int? notificationCount;
 
   const CustomAppBar({
-    Key? key,
+    super.key,
     required this.title,
     this.showBackButton = false,
     this.onBackPressed,
@@ -26,7 +26,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.onProfilePressed,
     this.onNotificationPressed,
     this.notificationCount,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

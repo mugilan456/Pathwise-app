@@ -11,14 +11,14 @@ class GradientCard extends StatelessWidget {
   final BorderRadius? borderRadius;
 
   const GradientCard({
-    Key? key,
+    super.key,
     required this.gradientColors,
     required this.child,
     this.height,
     this.onTap,
     this.padding = const EdgeInsets.all(AppDimensions.paddingLarge),
     this.borderRadius,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +61,7 @@ class PremiumCard extends StatelessWidget {
   final List<BoxShadow>? shadows;
 
   const PremiumCard({
-    Key? key,
+    super.key,
     required this.child,
     this.height,
     this.width,
@@ -69,7 +69,7 @@ class PremiumCard extends StatelessWidget {
     this.padding = const EdgeInsets.all(AppDimensions.paddingMedium),
     this.backgroundColor = AppTheme.surfaceColor,
     this.shadows,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -12,7 +12,7 @@ class GradientButton extends StatelessWidget {
   final Icon? trailingIcon;
 
   const GradientButton({
-    Key? key,
+    super.key,
     required this.label,
     required this.onPressed,
     this.gradientColors,
@@ -20,7 +20,7 @@ class GradientButton extends StatelessWidget {
     this.height = AppDimensions.buttonHeight,
     this.leadingIcon,
     this.trailingIcon,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -82,13 +82,13 @@ class OutlineGradientButton extends StatelessWidget {
   final double height;
 
   const OutlineGradientButton({
-    Key? key,
+    super.key,
     required this.label,
     required this.onPressed,
     this.borderColor = AppTheme.primaryColor,
     this.width,
     this.height = AppDimensions.buttonHeight,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

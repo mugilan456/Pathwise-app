@@ -10,13 +10,13 @@ class FilterChip extends StatefulWidget {
   final Color? unselectedColor;
 
   const FilterChip({
-    Key? key,
+    super.key,
     required this.label,
     required this.isSelected,
     required this.onSelected,
     this.selectedColor,
     this.unselectedColor,
-  }) : super(key: key);
+  });
 
   @override
   State<FilterChip> createState() => _FilterChipState();
@@ -64,14 +64,14 @@ class SearchBar extends StatelessWidget {
   final Icon? suffixIcon;
 
   const SearchBar({
-    Key? key,
+    super.key,
     this.controller,
     this.hint = 'Search',
     this.onChanged,
     this.onSearch,
     this.prefixIcon,
     this.suffixIcon,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -6,7 +6,7 @@ import 'package:student_guidance_platform/core/theme/app_theme.dart';
 import 'package:student_guidance_platform/widgets/custom_buttons.dart';
 
 class OnboardingScreen extends StatefulWidget {
-  const OnboardingScreen({Key? key}) : super(key: key);
+  const OnboardingScreen({super.key});
 
   @override
   State<OnboardingScreen> createState() => _OnboardingScreenState();
@@ -80,7 +80,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             SmoothPageIndicator(
               controller: _pageController,
               count: _pages.length,
-              effect: ExpandingDotsEffect(
+              effect: const ExpandingDotsEffect(
                 activeDotColor: AppTheme.primaryColor,
                 dotColor: AppTheme.borderColor,
                 dotHeight: 8,

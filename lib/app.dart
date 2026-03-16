@@ -10,7 +10,7 @@ import 'package:student_guidance_platform/modules/dashboard/dashboard_screen.dar
 import 'package:student_guidance_platform/modules/passed_out/passed_out_students_screen.dart';
 
 class StudentGuidanceApp extends StatelessWidget {
-  const StudentGuidanceApp({Key? key}) : super(key: key);
+  const StudentGuidanceApp({super.key});
 
   @override
   Widget build(BuildContext context) {

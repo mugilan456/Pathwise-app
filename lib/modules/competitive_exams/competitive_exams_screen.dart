@@ -8,7 +8,7 @@ import 'package:student_guidance_platform/widgets/custom_buttons.dart';
 import 'package:student_guidance_platform/widgets/exam_card.dart';
 
 class CompetitiveExamsScreen extends StatefulWidget {
-  const CompetitiveExamsScreen({Key? key}) : super(key: key);
+  const CompetitiveExamsScreen({super.key});
 
   @override
   State<CompetitiveExamsScreen> createState() => _CompetitiveExamsScreenState();
@@ -34,7 +34,7 @@ class _CompetitiveExamsScreenState extends State<CompetitiveExamsScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppTheme.backgroundColor,
-      appBar: CustomAppBar(
+      appBar: const CustomAppBar(
         title: AppStrings.competitiveExamsTitle,
         showBackButton: true,
         backgroundColor: AppTheme.surfaceColor,

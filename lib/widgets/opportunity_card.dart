@@ -10,11 +10,11 @@ class OpportunityCard extends StatefulWidget {
   final ValueChanged<bool>? onFavoriteChanged;
 
   const OpportunityCard({
-    Key? key,
+    super.key,
     required this.opportunity,
     this.onTap,
     this.onFavoriteChanged,
-  }) : super(key: key);
+  });
 
   @override
   State<OpportunityCard> createState() => _OpportunityCardState();

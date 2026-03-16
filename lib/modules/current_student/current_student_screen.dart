@@ -9,7 +9,7 @@ import 'package:student_guidance_platform/widgets/filter_chips.dart'
 import 'package:student_guidance_platform/widgets/opportunity_card.dart';
 
 class CurrentStudentScreen extends StatefulWidget {
-  const CurrentStudentScreen({Key? key}) : super(key: key);
+  const CurrentStudentScreen({super.key});
 
   @override
   State<CurrentStudentScreen> createState() => _CurrentStudentScreenState();
@@ -63,7 +63,7 @@ class _CurrentStudentScreenState extends State<CurrentStudentScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppTheme.backgroundColor,
-      appBar: CustomAppBar(
+      appBar: const CustomAppBar(
         title: AppStrings.currentStudentTitle,
         showBackButton: true,
         backgroundColor: AppTheme.surfaceColor,
@@ -133,7 +133,7 @@ class _CurrentStudentScreenState extends State<CurrentStudentScreen> {
                     ),
                     child: Column(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.work_outline,
                           size: 48,
                           color: AppTheme.textTertiary,

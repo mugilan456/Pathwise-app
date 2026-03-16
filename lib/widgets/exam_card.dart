@@ -9,10 +9,10 @@ class ExamCard extends StatelessWidget {
   final VoidCallback? onTap;
 
   const ExamCard({
-    Key? key,
+    super.key,
     required this.exam,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -166,10 +166,10 @@ class MockTestCard extends StatelessWidget {
   final VoidCallback? onTap;
 
   const MockTestCard({
-    Key? key,
+    super.key,
     required this.mockTest,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

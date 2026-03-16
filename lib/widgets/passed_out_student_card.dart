@@ -9,10 +9,10 @@ class PassedOutStudentCard extends StatelessWidget {
   final VoidCallback? onTap;
 
   const PassedOutStudentCard({
-    Key? key,
+    super.key,
     required this.student,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

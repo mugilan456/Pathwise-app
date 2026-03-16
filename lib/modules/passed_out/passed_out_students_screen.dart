@@ -9,7 +9,7 @@ import 'package:student_guidance_platform/widgets/filter_chips.dart'
 import 'package:student_guidance_platform/widgets/passed_out_student_card.dart';
 
 class PassedOutStudentsScreen extends StatefulWidget {
-  const PassedOutStudentsScreen({Key? key}) : super(key: key);
+  const PassedOutStudentsScreen({super.key});
 
   @override
   State<PassedOutStudentsScreen> createState() =>
@@ -64,7 +64,7 @@ class _PassedOutStudentsScreenState extends State<PassedOutStudentsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppTheme.backgroundColor,
-      appBar: CustomAppBar(
+      appBar: const CustomAppBar(
         title: AppStrings.passedOutTitle,
         showBackButton: true,
         backgroundColor: AppTheme.surfaceColor,
@@ -134,7 +134,7 @@ class _PassedOutStudentsScreenState extends State<PassedOutStudentsScreen> {
                     ),
                     child: Column(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.person_search,
                           size: 48,
                           color: AppTheme.textTertiary,

@@ -7,7 +7,7 @@ import 'package:student_guidance_platform/widgets/custom_app_bar.dart';
 import 'package:student_guidance_platform/widgets/custom_cards.dart';
 
 class DashboardScreen extends StatefulWidget {
-  const DashboardScreen({Key? key}) : super(key: key);
+  const DashboardScreen({super.key});
 
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();
@@ -79,9 +79,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
             // Passed Out Students Card
             GradientCard(
-              gradientColors: [
-                const Color(0xFF6366F1),
-                const Color(0xFF4F46E5),
+              gradientColors: const [
+                Color(0xFF6366F1),
+                Color(0xFF4F46E5),
               ],
               height: 180,
               onTap: () {
@@ -160,9 +160,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
             // Current Students Card
             GradientCard(
-              gradientColors: [
-                const Color(0xFF10B981),
-                const Color(0xFF059669),
+              gradientColors: const [
+                Color(0xFF10B981),
+                Color(0xFF059669),
               ],
               height: 180,
               onTap: () {
@@ -241,9 +241,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
             // Competitive Exams Card
             GradientCard(
-              gradientColors: [
-                const Color(0xFFF59E0B),
-                const Color(0xFFD97706),
+              gradientColors: const [
+                Color(0xFFF59E0B),
+                Color(0xFFD97706),
               ],
               height: 180,
               onTap: () {

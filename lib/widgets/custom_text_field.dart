@@ -17,7 +17,7 @@ class CustomTextField extends StatefulWidget {
   final bool readOnly;
 
   const CustomTextField({
-    Key? key,
+    super.key,
     required this.label,
     required this.hint,
     this.controller,
@@ -30,7 +30,7 @@ class CustomTextField extends StatefulWidget {
     this.maxLines = 1,
     this.minLines = 1,
     this.readOnly = false,
-  }) : super(key: key);
+  });
 
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
