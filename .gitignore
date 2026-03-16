@@ -44,7 +44,6 @@ ios/Flutter/Flutter.framework
 # Temporary files
 *.tmp
 build_output.txt
-test/
 .metadata
   }
 }
