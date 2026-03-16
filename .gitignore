@@ -1,0 +1,70 @@
+# Flutter
+.dart_tool/
+.flutter/
+.packages
+.pub/
+.pub-cache/
+
+flutter_export_environment.sh
+Generated.xcconfig
+
+# Build
+build/
+dist/
+*.apk
+*.ipa
+*.app
+*.exe
+*.zip
+
+# Misc
+*.swp
+*~
+.DS_Store
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.iml
+.gradle
+
+# Android
+android/.gradle/
+android/.idea/
+android/local.properties
+android/captures/
+android/gradle/
+
+# iOS
+ios/Flutter/ephemeral/
+ios/Flutter/Flutter.framework
+
+# Temporary files
+*.tmp
+build_output.txt
+test/
+.metadata
+  }
+}
+
+extension DateTimeExtensions on DateTime {
+  String toFormattedString() {
+    final months = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec'
+    ];
+    return '$day ${months[month - 1]} $year';
+  }
+}
